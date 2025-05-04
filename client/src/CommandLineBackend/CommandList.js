@@ -8,18 +8,17 @@ export function getHistory() {
 }
 
 export function runCommand(input) {
+  // cleans up input
   const cmdToFind = input.trim().toLowerCase();
-
-  console.log(cmdToFind);
-
+  // finds command through command.js
   const result = commands.find((cmd) => cmd.name === cmdToFind);
-  console.log(result);
 
   if (!result) {
     throw new Error(`Unknown command: ${cmdToFind}`);
   }
-
+  
   history.push("\t" + cmdToFind);
+
   const output = result.func();
   
   return output;

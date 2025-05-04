@@ -10,7 +10,12 @@ export const commands = [
   {
     name: "aboutme",
     description: "Who is Patheit?",
-    func:  "Add aboutme description later",
+    func: () => [`\tHey, I'm Andrew!\n\t
+    I'm a Computer Science student at Irvine Valley College, currently working on full-stack projects (like this terminal)
+    \n\twith a strong focus on backend development. I've been building with frameworks such as Flask, FastAPI, and SpringBoot.
+    \n\tOutside of coding, I enjoy reading manga and manhwas and watching basketball. As I prepare to transfer to Cal State Fullerton,
+    \n\tI'm actively seeking internship opportunities to further grow as a software engineer.
+    `],
   },
   {
     name: "github",
@@ -20,12 +25,12 @@ export const commands = [
   {
     name: "projects",
     description: "View coding projects",
-    func: "Add projects later",
+    func:() => ["\tBiteSafe - A mobile app that recommends restaurants and dishes\n\tbased on what you're not allergic to."],
   },
   {
     name: "email",
     description: "Email to contact me",
-    func: "andrewtnguyen0106@gmail.com",
+    func:() => ["\tContact me: andrewtnguyen0106@gmail.com"],
   },
   {
     name: "linkedin",
@@ -40,7 +45,7 @@ export const commands = [
   {
     name: "clear",
     description: "Clear terminal",
-    func: "clearTerminal",
+    func:() => ["Cleared Terminal"],
   },
 ];
 

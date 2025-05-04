@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .blinking-cursor {
-    animation: blink 1.5s step-start infinite;
+    animation: blink 0.75s step-start infinite;
 }
 
 @keyframes blink {
