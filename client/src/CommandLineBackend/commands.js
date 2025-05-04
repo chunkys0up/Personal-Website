@@ -1,3 +1,5 @@
+import { getHistory } from "./CommandList";
+
 // List of commands that we can call on and what their functionality is
 export const commands = [
   {
@@ -8,12 +10,12 @@ export const commands = [
   {
     name: "aboutme",
     description: "Who is Patheit?",
-    func: "Add aboutme description later",
+    func:  "Add aboutme description later",
   },
   {
     name: "github",
-    description: "View Github link",
-    func: "https://github.com/chunkys0up",
+    description: "View Github",
+    func: () => ["https://github.com/chunkys0up github"],
   },
   {
     name: "projects",
@@ -28,12 +30,12 @@ export const commands = [
   {
     name: "linkedin",
     description: "View Linkedin",
-    func: "www.linkedin.com/in/andrewtnguyen49345",
+    func: () => ["https://linkedin.com/in/andrewtnguyen49345 linkedin"],
   },
   {
     name: "history",
-    description: "View terminal history",
-    func: "Add function to get list of history later",
+    description: "View terminal commands history",
+    func: () => getHistory(),
   },
   {
     name: "clear",
@@ -46,6 +48,7 @@ export const commands = [
  * @returns the formatted commands of help command line call
  */
 function helpCommand() {
+
   let list_of_commands = [];
 
   for (let i = 1; i < commands.length; i++) {
@@ -60,8 +63,3 @@ function helpCommand() {
 }
 
 
-/**
- * Testing commands
- */
-
-//console.log(helpCommand());
