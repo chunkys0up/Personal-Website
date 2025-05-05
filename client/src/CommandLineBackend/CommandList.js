@@ -23,5 +23,3 @@ export function runCommand(input) {
   
   return output;
 }
-
-

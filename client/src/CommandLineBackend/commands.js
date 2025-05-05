@@ -66,5 +66,3 @@ function helpCommand() {
 
   return list_of_commands;
 }
-
-
