@@ -13,7 +13,7 @@ export const commands = [
     func: () => [`\tHey, I'm Andrew!\n\t
     I'm a Computer Science student at Irvine Valley College, currently working on full-stack projects (like this terminal)
     \n\twith a strong focus on backend development. I've been building with frameworks such as Flask, FastAPI, and SpringBoot.
-    \n\tOutside of coding, I enjoy reading manga and manhwas and watching basketball. As I prepare to transfer to Cal State Fullerton,
+    \n\tOutside of coding, I enjoy reading manga/manhwas and watching basketball. As I prepare to transfer to Cal State Fullerton,
     \n\tI'm actively seeking internship opportunities to further grow as a software engineer.
     `],
   },

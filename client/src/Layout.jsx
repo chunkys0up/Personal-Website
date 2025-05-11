@@ -1,5 +1,5 @@
 import TerminalPage from "./pages/TerminalPage";
-import SummaryPage from "./pages/SummaryPage";
+import AboutMe from "./pages/SummaryPage";
 
 import { useState } from "react";
 
@@ -34,7 +34,7 @@ export default function Layout() {
       </header>
 
       {/* Toggle between page components*/}
-      {activeView === "terminal" ? <TerminalPage /> : <SummaryPage />}
+      {activeView === "terminal" ? <TerminalPage /> : <AboutMe />}
     </div>
   );
 }
